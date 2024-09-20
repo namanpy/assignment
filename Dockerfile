@@ -6,7 +6,7 @@ FROM node:20
 
 RUN apt-get update 
 
-RUN apt-get install -y python make gcc g++ 
+RUN apt-get install -y python-is-python3 make gcc g++ 
 
 # Install google-chrome-stable
 RUN apt-get install gnupg wget -y && \
