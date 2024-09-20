@@ -20,4 +20,4 @@ COPY --chown=node:node . .
 
 EXPOSE 8080
 
-CMD [ "npm", "start dist/index.js" ]
+CMD [ "node", "dist/index.js" ]
