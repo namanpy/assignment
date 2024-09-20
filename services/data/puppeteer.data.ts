@@ -4,7 +4,11 @@ import puppeteer, { Browser } from "puppeteer";
 var browser: Browser;
 
 export const generatePdfFromHtml = async (html: string) => {
-  if (!browser) browser = await puppeteer.launch();
+  if (!browser)
+    browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
 
   // Open a new page
   const page = await browser.newPage();
