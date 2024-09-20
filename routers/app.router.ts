@@ -1,10 +1,12 @@
 // This is our root router
 import { Router } from "express";
 
-const router =  Router();
+import UserRouter from "@routers/user.router";
+import ProductRouter from "@routers/product.router";
 
-router.use("/user")
-router.use("/quotation")
+const router = Router();
 
-export const AppRouter = router;
+router.use("/user", UserRouter);
+router.use("/quotation", ProductRouter);
 
+export default router;
