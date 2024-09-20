@@ -26,11 +26,9 @@ RUN mkdir -p /home/node/app/node_modules && chown -R pptruser:pptruser /home/nod
 
 WORKDIR /home/node/app
 
-COPY package*.json ./
+COPY . .
 
 RUN npm install
-
-COPY . .
 
 RUN npm run build
 
