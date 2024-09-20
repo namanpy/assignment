@@ -6,7 +6,9 @@ The project is deployed to [Render.com](https://render.com/). You can access the
 
 ### Postman Collection
 
-A Postman collection for testing the API is available at this URL: [https://www.postman.com/namanpy/workspace/namanspace/collection/11076275-cd33e828-e982-4225-ad4a-428848780c2a?action=share&creator=11076275](https://www.postman.com/namanpy/workspace/namanspace/collection/11076275-cd33e828-e982-4225-ad4a-428848780c2a?action=share&creator=11076275).
+A Postman collection for testing the API is available at this URL: [https://www.postman.com/namanpy/workspace/namanspace/collection/11076275-cd33e828-e982-4225-ad4a-428848780c2a?action=share&creator=11076275](https://www.postman.com/namanpy/workspace/namanspace/collection/11076275-cd33e828-e982-4225-ad4a-428848780c2a?action=share&creator=11076275)
+
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/11076275-cd33e828-e982-4225-ad4a-428848780c2a?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D11076275-cd33e828-e982-4225-ad4a-428848780c2a%26entityType%3Dcollection%26workspaceId%3Db069e8bc-cbf5-410a-ae6d-baea8833c16e)
 
 Overview
 --------
