@@ -7,6 +7,6 @@ import ProductRouter from "@routers/product.router";
 const router = Router();
 
 router.use("/user", UserRouter);
-router.use("/quotation", ProductRouter);
+router.use("/product", ProductRouter);
 
 export default router;

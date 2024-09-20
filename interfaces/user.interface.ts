@@ -1,5 +1,8 @@
+import { Types } from "mongoose";
+
 export type User = {
-    name: string;
-    email: string;
-    password: string;
-}
+  _id: Types.ObjectId;
+  name: string;
+  email: string;
+  password: string;
+};

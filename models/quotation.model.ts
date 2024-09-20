@@ -1,22 +1,31 @@
-import { Schema, model } from "mongoose";
+import { Types, Schema, model } from "mongoose";
 import { Product, Quotation } from "@interfaces/product.interface";
 
-const productSchema = new Schema<Product>({
-  name: {
-    type: String,
-    required: true,
-  },
-  qty: {
-    type: Number,
-    required: true,
-  },
-  rate: {
-    type: Number,
-    required: true,
-  },
-});
+export type QuotationDocument = Quotation & {
+  _id: Types.ObjectId;
+  createdAt: Date;
+  updatedAt: Date;
+};
 
-const schema = new Schema<Quotation>(
+const productSchema = new Schema<Product>(
+  {
+    name: {
+      type: String,
+      required: true,
+    },
+    qty: {
+      type: Number,
+      required: true,
+    },
+    rate: {
+      type: Number,
+      required: true,
+    },
+  },
+  { _id: false }
+);
+
+const schema = new Schema<QuotationDocument>(
   {
     user: {
       type: Schema.Types.ObjectId,

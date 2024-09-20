@@ -20,7 +20,7 @@ export const getQuotation = async (input: {
 export const getQuotationByUser = async (input: { userId: Types.ObjectId }) => {
   const { userId } = input;
 
-  const quotation = await QuotationModel.find({ userId }).lean().exec();
+  const quotation = await QuotationModel.find({ user: userId }).lean().exec();
   return quotation;
 };
 

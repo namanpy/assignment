@@ -53,7 +53,7 @@ export const generateInvoiceHtml = (quotation: Quotation) => {
                 <p style="margin: 0;">GST: ${quotation.gst}%</p>
                 <hr/>
                 <p style="margin: 0; font-size: 18px; font-weight: bold;">Grand Total: <span style="color: #4A90E2;">₹${
-                  quotation.total * quotation.gst
+                  quotation.total + (quotation.total * quotation.gst) / 100
                 }</span></p>
                 <hr/>
             </div>
@@ -61,7 +61,7 @@ export const generateInvoiceHtml = (quotation: Quotation) => {
 
         <p style="text-align: left; color: #666; font-size: 12px;">Valid until: <b>${moment()
           .add(1, "day")
-          .format("dd/mm/yy")}</b></p>
+          .format("DD/MM/YY")}</b></p>
 
         <div style="background-color: #333; color: #fff; padding: 15px; border-radius: 5px;  text-align: center;">
             <p style="margin: 0; font-size: 12px;">Terms and Conditions</p>
