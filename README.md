@@ -6,7 +6,7 @@ The project is deployed to [Render.com](https://render.com/). You can access the
 
 ### Postman Collection
 
-A Postman collection for testing the API is available at this URL: [Postman Collection](#).
+A Postman collection for testing the API is available at this URL: [https://web.postman.co/workspace/NamanSpace~b069e8bc-cbf5-410a-ae6d-baea8833c16e/collection/11076275-b651cbe6-1bf7-4634-8407-7f3d1281c3c5](https://web.postman.co/workspace/NamanSpace~b069e8bc-cbf5-410a-ae6d-baea8833c16e/collection/11076275-b651cbe6-1bf7-4634-8407-7f3d1281c3c5).
 
 Overview
 --------
