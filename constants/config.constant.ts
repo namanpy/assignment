@@ -1,6 +1,6 @@
 export const APP_CONFIG = {
   ENVIRONMENT: process.env.APP_ENVIRONMENT,
-  PORT: 3000,
+  PORT: 8080,
   MONGO_URL: process.env.MONGO_URL || "",
 };
 
